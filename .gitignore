@@ -1,0 +1,59 @@
+
+# Ignore bundler config.
+/UnoTest/.bundle
+# Ignore the default SQLite database.
+/UnoTest/db/*.sqlite3
+/UnoTest/db/*.sqlite3-*
+# Ignore all logfiles and tempfiles.
+/UnoTest/log/*
+/UnoTest/tmp/*
+/UnoTest!/log/.keep
+/UnoTest!/tmp/.keep
+# Ignore pidfiles, but keep the directory.
+/UnoTest/tmp/pids/*
+/UnoTest!/tmp/pids/
+/UnoTest!/tmp/pids/.keep
+# Ignore uploaded files in development.
+/UnoTest/storage/*
+/UnoTest!/storage/.keep
+/UnoTest/tmp/storage/*
+/UnoTest!/tmp/storage/
+/UnoTest!/tmp/storage/.keep
+/UnoTest/public/assets
+# Ignore master key for decrypting credentials and more.
+/UnoTest/config/master.key
+
+
+
+
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+/public/assets
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
