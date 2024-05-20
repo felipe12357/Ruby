@@ -11,3 +11,11 @@
     rails server => run an application
     rails server -p 3001 => corro la aplicacion en el puerto 3001
     rails generate controller pages => crea el controlador pages
+
+    el siguiente comando crea:
+    vistas,ut, controlador, form, una migracion y otros elementos para un CRUD referente aun "articulo" con 2 columnas
+        rails generate scaffold Article title:string description:text
+
+    rails db:migrate => corre el archivo migraciones
+
+    rails routes --expanded => nos permite ver las rutas disponibles

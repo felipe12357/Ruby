@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :articles
   root 'pages#home'
-  # Defines the root path route ("/")
-  # root "articles#index"
+  #se puede de cualquiera de las 2 formas, las 2 rutas buscan el mismo controlador y vista
+  #la ruta /about, busca el controlador "pages", la vista y metodo: "about" 
+  get 'about', :to => 'pages#about'
+  get 'about2', to: 'pages#about'
 end
