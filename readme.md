@@ -1,4 +1,4 @@
-# Commands
+## Commands
     ruby nombreArchivo.rb => ejecuta un archivo de ruby
     ruby --version => muestra la version actualial de ruby
     brew install rbenv ruby-build => instala el manejador de versiones de ruby: rbenv
@@ -16,19 +16,19 @@
         genera: vistas,ut, controlador, form, una migracion y otros elementos para un CRUD referente aun "articulo" con 2 columnas
         
 
-    ## Migrations: 
+    Migrations: 
         rails db:migrate => corre el archivo migraciones //esto solo ejecuta las migraciones pendientes
         rails generate migration create_articlesF =>crea el archivo de migracion: "create_articlesF"
         rails db:rollback =>devuelve el schema una migracion atras
 
         importante correr el comando de ejecucion de migraciones despues de crearlas
 
-    ## Routes:
+    Routes:
         rails routes --expanded => nos permite ver las rutas disponibles
         rails routes --expanded -c=articles => permite ver las rutas de un solo controlador
     
 
-    ## Consola Rails: 
+    Consola Rails: 
         rails c => permite acceder a la consola de rails
         Modelo.All "Article.all" => permite ver todos los registros
 
@@ -46,7 +46,7 @@
 
         reload! permite recargar las consola y q tome los cambios aplicados en el modelo
 
-# Steps for working with new elements
+## Steps for working with new elements
     * Crear la tabla en la base de datos, para ello usamos las migraciones
         debe ser en plural y todo en minusculas (article_fs)
     * Crear el archivo del modelo el nombre del archivo en camelCase (primera en minuscula), 
@@ -55,7 +55,7 @@
     * Crear el archivo Controlador (articleFs_controller.rb )
     * Crear la vista (article_fs/show.html.erb)
 
-# Inside the Code
+## Inside the Code
     * debugger =>utilizar debugger para detener la compilacion y acceder a todos los elementos de entorno
         por ejemplo saber el valor de alguna variable en concreto, para ello simplemente escribimos el nombre de la variable: ArticleF
         con n sigue a la siguiente line, con c continua con la ejecucion normal

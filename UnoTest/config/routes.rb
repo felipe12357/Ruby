@@ -6,7 +6,13 @@ Rails.application.routes.draw do
   get 'about', :to => 'pages#about'
   get 'about2', to: 'pages#about'
 
-  #Para ver todas las rutas de un solo controlador: rails routes --expanded -c=articles
+  #Para ver todas las rutas de un solo controlador: 
+   # rails routes --expanded -c=articles
+   # rails routes --expanded -c=articleFs
+
+  #si quiero utilizar la ruta para una redirecion utilizo el prefix 
+  # Prefix            | article_fs  => article_fs_path => redireciona a article_fs#index
+
   resources :articles #integra todo un conjunto de rutas para el modelo articles:
   #Controller#Action | articles#index    GET    /articles
   #Controller#Action | articles#create   POST   /articles
@@ -18,5 +24,5 @@ Rails.application.routes.draw do
   #Controller#Action | articles#destroy  DELETE /articles/:id
 
   #De esta forma solo genera las rutas q agreguemos en el array
-  resources :article_fs, only: [:show] 
+  resources :article_fs, only: [:show, :index, :create, :new, :edit, :update, :destroy] 
 end

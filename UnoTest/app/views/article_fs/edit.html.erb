@@ -1,0 +1,33 @@
+<%= link_to "Come Back",article_fs_path %>
+
+<h2>Update article <%= article_fs_path %> </h2>
+<%= render 'form' %>
+<!--
+<%= form_with model: @articleF, url: "/article_fs/#{params[:id]}", data: { turbo: false } do |formArticle| %>
+    <p>
+        <%= formArticle.label :title%> <br>
+        <%= formArticle.text_field :title%> 
+    </p>
+    <p>
+        <%= formArticle.label :description%> <br>
+        <%= formArticle.text_area :description%> 
+    </p>
+    <p>
+        <%= formArticle.label :author%> <br>
+        <%= formArticle.text_field :author%> 
+    </p>
+    <p>
+        <%= formArticle.submit "Update ArticuleF" %>
+    </p>
+<% end %>
+
+<% if @articleF.errors.full_messages.any? %>
+    <h2>There was an error during the update: </h2>
+    <ul>
+        <% @articleF.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+        <% end %>
+   <ul>
+<%end %>
+
+-->
